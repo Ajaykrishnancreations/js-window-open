@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    function fun1()
+    {
+        fun5();
+        document.getElementById("show").innerHTML="<object data ='login1.html'width='500'height='900'></object>";
+    }
+    function fun4()
+    {
+        document.getElementById("show").style.display="none";
+    }
+    function fun5()
+    {
+        document.getElementById("show").style.display="block";
+    }
+</script>
+</head>
+<body>
+    
+<input type="button" onclick="fun1()" value="login">
+<input type="button" onclick="fun2()"value="exe">
+<input type="button" onclick="fun3()"value="sample">
+<input type="button" onclick="fun4()"value="X">
+
+<center><div id="show"></div></center>
+</body>
+</html>

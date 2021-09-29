@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+    body{
+        background-image:url("login1.jpg");
+        background-size: cover;             
+    }
+.outer{
+    border: solid white;
+    height: 600px;
+    width: 408px;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 10px;
+
+    position: absolute;
+    
+    left:50%;
+    top: 50%;
+    transform: translate(-204px,-250px);
+    border-style: dotted;
+    animation-name: anu;
+    animation-iteration-count: infinite;
+    animation-duration: 0.3s;
+}
+@keyframes anu{
+    from{border: dotted white;}
+    to{border: dashed white;}
+}
+    .full{
+        border:solid black;
+        height: 595px;
+        width: 400px;
+        border-radius: 10px;
+        background-color: black;
+        opacity: 0.8;;
+
+    }
+    .ajay{
+        font-size: small;
+        height: 30px;
+        width: 300px;
+    }
+
+button{
+    width: 250px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(255, 39, 39);
+    cursor: pointer;
+    border:solid white;
+    
+}
+
+#nam,#pass {
+    border-radius: 10px;
+    height: 30px;
+    width: 350px;
+    font-size: 15px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    border-color:red;
+}
+#nam:hover{
+    border-color: white;
+}
+#pass:hover{
+    border-color: white;
+}
+#ajai{
+    color: red;
+    animation-name: ajay;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+@keyframes ajay
+{
+    from{color: red;}
+    to{color: white;}
+} 
+.img{
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    animation-name: abianu;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}   
+@keyframes abianu{
+    0%{left: 0px;}
+    50%{left: -180px;}
+    100%{left: -300px;}
+}
+.ajay{
+    
+}
+#kfc
+{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px,-350px);
+    
+}
+#kfc:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+    </style>
+</head>
+<body>
+    <center><div class="ajay">
+    <p id="login" style="color: white;padding-top: -5px; font-size: 40px;">KFC Login Form</p>
+</div></center>
+    <br>
+    <div class="outer"><div class="full">
+        <br>
+        <br><center>
+        <h2 id="ajai" style="color: red;text-align: center;font-size: 30px;">Login Here</h2>
+       
+        <h4 style="text-align: left;color: white;">Username :</h4>
+        <input type="text" id="nam" placeholder="Username">
+        
+            <h4 style="text-align: left;color: white;">Password :</h4>
+    
+    <input type="password" id="pass" placeholder="Password"text-align="right">
+    <br>    
+    <br>
+    <h2 style="color: white;">Forgot Password? </h2>
+       <br> <button>LOGIN</button>
+        <br><br>
+        <p style="color: white;">Don't have an accout?Register</p>
+    <div class="img">
+        <img src="kkk.png" width="100px" ></center>
+    </div>
+    <br><br><br>
+    <center><p style="color: white;">@2020 Material Login Form . All Rights Reserved </p></center>
+    <img id="kfc" src="123.jpeg">
+
+</body>
+</html>
